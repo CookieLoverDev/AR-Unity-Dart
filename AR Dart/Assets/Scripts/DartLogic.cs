@@ -6,7 +6,6 @@ public class DartLogic : MonoBehaviour
 {
     private Rigidbody dartRB;
     private GMScript mainLogic;
-    public float shootForce = 25.0f;
 
     private void Start()
     {
@@ -21,5 +20,7 @@ public class DartLogic : MonoBehaviour
             dartRB.constraints = RigidbodyConstraints.FreezeAll;
             mainLogic.AddScore();
         }
+
+        Destroy(gameObject);
     }
 }

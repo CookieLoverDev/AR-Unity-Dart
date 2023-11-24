@@ -6,6 +6,7 @@ public class SpawnLocScript : MonoBehaviour
 {
     void Update()
     {
-        transform.LookAt(Camera.main.transform.position);
+        gameObject.transform.position = Camera.main.transform.position;
+        gameObject.transform.rotation = Camera.main.transform.rotation;
     }
 }
